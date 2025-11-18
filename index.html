@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Bliss – Fresh & Delicious Cakes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #fff7fa;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            padding: 20px 5%;
+            background: #ffe3ec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        header h2 {
+            color: #d63384;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #d63384;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0 8%;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #d63384;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #d63384;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero img {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        /* PRODUCT SECTION */
+        .products {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #d63384;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+            color: #d63384;
+        }
+
+        /* TESTIMONIAL SECTION */
+        .testimonial {
+            padding: 60px 8%;
+            background: #ffe3ec;
+            text-align: center;
+        }
+
+        .testimonial h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #d63384;
+        }
+
+        .testimonial-box {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+            color: #d63384;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #d63384;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>Cake Bliss</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Cakes</a>
+            <a href="#testimonial">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="btn">Book Online</a>
+        </nav>
+    </header>
+
+    <!-- HERO Banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Fresh. Delicious. Beautiful Cakes.</h1>
+            <p>Handcrafted cakes for birthdays, weddings, parties and every sweet moment.  
+                Freshly baked with love every day.</p>
+            <a href="#products" class="btn">Explore Cakes</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55" alt="Cake">
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <h2>Our Cakes</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="cake">
+                <h3>Chocolate Delight</h3>
+                <p>$20</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1612197526185-8a5d6a874bdc" alt="cake">
+                <h3>Strawberry Bliss</h3>
+                <p>$22</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af" alt="cake">
+                <h3>Vanilla Dream</h3>
+                <p>$18</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1588195540871-1b8c6a3f63f6" alt="cake">
+                <h3>Red Velvet</h3>
+                <p>$25</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial" id="testimonial">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial-box">
+            <p>"Best cakes in the city! The flavors are rich, soft, and super fresh. 
+                I always order my birthday cakes from Cake Bliss!"</p>
+            <br>
+            <strong>- Priya Sharma</strong>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <p><strong>📍 Address:</strong> Cake Bliss Bakery, Mumbai</p>
+            <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p><strong>📧 Email:</strong> info@cakebliss.com</p>
+        </div>
+        <br>
+        <a href="#" class="btn">Book Online</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cake Bliss | Freshly Baked With Love 💖
+    </footer>
+
+</body>
+</html>
